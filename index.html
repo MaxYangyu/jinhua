@@ -26,8 +26,8 @@
         </div>
     </div>
 </div>
-<div class="box-1 box-one" style="height: 20.7rem">
-    <div class="box-2" style="height: 20.62rem">
+<div class="box-1 box-one" style="height: 20.7rem;margin-bottom: 1.5rem">
+    <div class="box-2 nav" style="height: 20.62rem">
         <div class="title">
             <i></i>
             <span class="title-name m-15">榜单</span>
@@ -209,20 +209,20 @@
 </div>
 
 <div class="box-1 box-two none" style="height: 7.15rem">
-    <div class="box-2" style="height: 7.05rem">
+    <div class="box-2 " style="height: 7.05rem">
         <div class="title">
             <i></i>
             <span class="title-name m-15">活动规则</span>
             <i></i>
         </div>
         <div class="box-img" style="height: 6.25rem">
-          <span>1.本次活动为礼物升级活动，只有完成当前阶段的任
+          <span style="padding-top: 0.1rem">1.本次活动为礼物升级活动，只有完成当前阶段的任
  务，才可以进行下一阶段。</span>
             <span>2.完成第一、第二阶段任务的主播，可额外获得该阶
  段所有礼物4%的逗票奖励;</span>
-                <span>完成第三、第四阶段任务的主播，可额外获得该阶
+            <span>完成第三、第四阶段任务的主播，可额外获得该阶
 段所有礼物6%的逗票奖励;</span>
-                <span>完成第五阶段任务的主播，可额外获得该阶段所有
+            <span>完成第五阶段任务的主播，可额外获得该阶段所有
 礼物8%的逗票奖励。</span>
             <span>3.达成最后一个阶段后，主播仍可继续收取该阶段的
  礼物。</span>
@@ -240,9 +240,19 @@
 <script src="js/rem.js"></script>
 
 <script>
-    $('.footer').on('click',function () {
-        $('.box-one').addClass('none')
-        $('.box-two').removeClass('none')
+    $(function () {
+        var height1 = ( $('.box-3')[0].scrollHeight)
+        var height2 = ( $('.title')[0].scrollHeight)
+        var height3 =height1+height2+16
+        var height4 =height3+5
+        $('.nav').css('height',height3+'px')
+        $('.nav').parent().css('height',height4+'px')
+
+        $('.footer').on('click', function () {
+            $('.box-one').addClass('none')
+            $('.box-two').removeClass('none')
+        })
     })
+
 </script>
 </html>
