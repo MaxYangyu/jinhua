@@ -193,44 +193,19 @@
                 </div>
             </div>
 
-            <!--<div class="info-footer">
+            <div class="info-footer">
                 <span class="fl">
                     我的当前阶段：
                 </span>
                 <img src="img/玫瑰花.png"/>
                 <span class="number fr">566/888</span>
-            </div>-->
+            </div>
         </div>
     </div>
 </div>
 <div class="footer box-one">
     <img src="img/组-2-拷贝@2x.png" class="img-responsive img-btn" height=".85rem" width="1.07rem"/>
     <span>活动规则</span>
-</div>
-
-<div class="box-1 box-two none" style="height: 7.35rem;margin-bottom: 1.5rem">
-    <div class="box-2 " style="height: 7.25rem">
-        <div class="title">
-            <i></i>
-            <span class="title-name m-15">活动规则</span>
-            <i></i>
-        </div>
-        <div class="box-img" style="height: 6.35rem">
-          <span style="padding-top: 0.1rem">1.本次活动为礼物升级活动，只有完成当前阶段的任
- 务，才可以进行下一阶段。</span>
-            <span>2.完成第一、第二阶段任务的主播，可额外获得该阶
- 段所有礼物4%的逗票奖励;</span>
-            <span>完成第三、第四阶段任务的主播，可额外获得该阶
-段所有礼物6%的逗票奖励;</span>
-            <span>完成第五阶段任务的主播，可额外获得该阶段所有
-礼物8%的逗票奖励。</span>
-            <span>3.达成最后一个阶段后，主播仍可继续收取该阶段的
- 礼物。</span>
-            <span>4.活动结束后，榜单前三名主播可额外获得4w，3w，
- 2w的逗票奖励，所有奖励将在活动结束后一个工作
- 日内发放。</span>
-        </div>
-    </div>
 </div>
 
 
@@ -241,15 +216,17 @@
 
 <script>
     $(function () {
-        var height1 = ( $('.box-3')[0].scrollHeight)
-        var height2 = ( $('.title')[0].scrollHeight)
-        var height3 =height1+height2+16
-        var height4 =height3+5
-        $('.nav').css('height',height3+'px')
-        $('.nav').parent().css('height',height4+'px')
+        var scroll = document.body.scrollHeight;
+        $('body').css('height', scroll);
+        var height1 = ( $('.box-3')[0].scrollHeight);
+        var height2 = ( $('.title')[0].scrollHeight);
+        var height3 = height1 + height2 + 16;
+        var height4 = height3 + 5;
+        $('.nav').css('height', height3 + 'px');
+        $('.nav').parent().css('height', height4 + 'px');
 
         $('.footer').on('click', function () {
-           window.location.href="nav.html"
+            window.location.href = "nav.html"
         })
     })
 

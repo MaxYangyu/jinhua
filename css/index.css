@@ -134,13 +134,14 @@ body {
 .box-1 .img-info span {
   position: absolute;
   top: -0.4rem;
+  font-size: 0.28rem;
 }
 .box-1 .img-info img:nth-child(1) {
   width: 0.5rem;
   height: 0.44rem;
   position: absolute;
-  top: -0.34rem;
-  left: -4px;
+  top: -0.33rem;
+  left: -3px;
 }
 .box-1 .img-info img:nth-child(2) {
   width: 0.8rem;
