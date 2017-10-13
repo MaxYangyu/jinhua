@@ -195,13 +195,13 @@
                 </div>
             </div>
 
-            <!--<div class="info-footer">
+            <div class="info-footer">
                     <span class="fl">
                     我的当前阶段：
                 </span>
                 <img src="img/玫瑰花.png"/>
                 <span class="number fr">566/888</span>
-            </div>-->
+            </div>
         </div>
     </div>
 </div>
@@ -234,7 +234,7 @@
 
 <script>
     $(function () {
-        fc()
+
         var height1 = ($('.box-3')[0].scrollHeight);
         var height2 = ($('.title')[0].scrollHeight);
         var height3 = height1 + height2 + 16;
@@ -245,7 +245,10 @@
         $('.footer').on('click', function () {
             window.location.href = "nav.html"
         })
+        fc()
     });
+
+    //如果使用footer 要加载fc()
     function fc() {
         var scroll = document.body.scrollHeight + 55;
         $('body').css('height', scroll);
