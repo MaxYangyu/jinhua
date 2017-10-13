@@ -234,7 +234,7 @@
 
 <script>
     $(function () {
-        fx()
+        fc()
         var height1 = ($('.box-3')[0].scrollHeight);
         var height2 = ($('.title')[0].scrollHeight);
         var height3 = height1 + height2 + 16;
@@ -246,7 +246,7 @@
             window.location.href = "nav.html"
         })
     });
-    function fx() {
+    function fc() {
         var scroll = document.body.scrollHeight + 55;
         $('body').css('height', scroll);
     }
