@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
 <header>
     <img src="img/页头-拷贝@2x.png" class="img-responsive header"/>
@@ -193,13 +195,13 @@
                 </div>
             </div>
 
-            <div class="info-footer">
-                <span class="fl">
+            <!--<div class="info-footer">
+                    <span class="fl">
                     我的当前阶段：
                 </span>
                 <img src="img/玫瑰花.png"/>
                 <span class="number fr">566/888</span>
-            </div>
+            </div>-->
         </div>
     </div>
 </div>
@@ -209,9 +211,9 @@
 </div>
 
 
-<!--<footer>
+<footer>
     <div class="footer-one">
-        <img src="img/npc.jpg" class="img-responsive " />
+        <img src="img/npc.jpg" class="img-responsive "/>
     </div>
     <div class="footer-name">
         <span>当前主播</span>
@@ -223,7 +225,7 @@
     <div class="footer-number">
         <span>888/888</span>
     </div>
-</footer>-->
+</footer>
 
 </body>
 <script src="js/jquery-1.11.3.min.js"></script>
@@ -232,10 +234,8 @@
 
 <script>
     $(function () {
-        var scroll = document.body.scrollHeight+55;
-        $('body').css('height', scroll);
-        var height1 = ( $('.box-3')[0].scrollHeight);
-        var height2 = ( $('.title')[0].scrollHeight);
+        var height1 = ($('.box-3')[0].scrollHeight);
+        var height2 = ($('.title')[0].scrollHeight);
         var height3 = height1 + height2 + 16;
         var height4 = height3 + 5;
         $('.nav').css('height', height3 + 'px');
@@ -244,7 +244,11 @@
         $('.footer').on('click', function () {
             window.location.href = "nav.html"
         })
-    })
-
+    });
+    function fx() {
+        var scroll = document.body.scrollHeight + 55;
+        $('body').css('height', scroll);
+    }
 </script>
+
 </html>

@@ -276,12 +276,15 @@ footer {
     display: inline-block;
     margin-left: 0.15rem;
     position: relative;
-    top:0.25rem;
+    top: 0.25rem;
+    vertical-align: sub;
     span {
       display: block;
-      font-size: 0.3rem;
+      font-size: 0.28rem;
       color: #fefefe;
-
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
   .footer-img {
@@ -295,7 +298,7 @@ footer {
   .footer-number {
     margin-left: 0.6rem;
     display: inline-block;
-    span{
+    span {
       font-size: .3rem;
       color: #fefefe;
     }

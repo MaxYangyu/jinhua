@@ -247,11 +247,15 @@ footer .footer-name {
   margin-left: 0.15rem;
   position: relative;
   top: 0.25rem;
+  vertical-align: sub;
 }
 footer .footer-name span {
   display: block;
-  font-size: 0.3rem;
+  font-size: 0.28rem;
   color: #fefefe;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 footer .footer-img {
   display: inline-block;
